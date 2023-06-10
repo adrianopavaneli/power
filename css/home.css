@@ -1,127 +1,93 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
-
 .template {
     background: url(../img/banner.jpg) no-repeat center center ;
-    background-position: center; 
-  background-size: 100% 700px; 
-  position: absolute; 
-  
-   
     width: 100%;
     height: 700px;
-    
-    
+    position:absolute;   
 }
 .template__topo {
-    display: flex;
     height: 20px;
-    width: 92.5%;
-    padding-left: 100px;
-    padding-right: 100 px;
-    justify-content: space-between;
-    
-    font-weight: 400;
-    
-    
+    width: 100%;    
+    font-weight: 400;    
 }
-
-
-.template__topo__item {
-   
-    color: #ffffff;
-    
-    margin-right: 0;
-    
-    
-    
-
-}
-.nav {
-    margin-top: 15px;
-    
-    
-    
-}
-.navegador {
+.template__topo .container {
     display: flex;
-    background: #ffffff;
-    width: 90%;
-    margin-left: 100px;
-    margin-right: 100px;
     justify-content: space-between;
+    align-items: center;     
+}
+.template__topo__item {
+    color: #ffffff;
+    margin-top: 5px;
+}
+.template__topo__item__email {
+    color: #ffffff;
+}
+.container-fluid {    
+    background: #ffffff;
+    width: 85%;
+    margin-top: 2%;        
+}
+.menu {
     align-items: center;
-    
-    
+    flex-grow: 3;
 }
-.nav-link {
-    justify-content: last baseline;
+.navbar-toggler {    
+    background-image: url(../img/hamburguer.png);
+    width: 50px;
+    height: 50px;
+}
+.nav-link {    
     color: #ca970a;
-    font-size: 24;
-    font-weight: 600;
-    
-    
+    font-size: 24;    
 }
-
-
-
-.nav-item {
-    
-    margin-left: 10px;
+.nav-link:hover {
+    color: #000000;
+}
+.dropdown-menu {
+    font-size: 18px;
 }
 .dropdown-item {
     color: #ca970a;
 }
-.dropdown-item:hover {
-    color: #000000;
-}
-
 .nav-whatsapp {
     width: 64px; 
-    height: 64px;
-    margin-right: 10px;
-    margin-top: 10px;
+    height: 64px;   
 }
-
+.template__texto {
+    margin-top: 30px;
+}
 h1 {
-    margin-top: 100px;
-    margin-bottom: 20px;
     font-size: 70;
     color: #ca970a;    
     text-align: center;
-    font-family: 'Acme', sans-serif;
-    
-   
-
-    
+    font-family: 'Acme', sans-serif; 
+    position: relative; 
 }
 h2 {
+    margin-top: 20px;
     font-size: 50;
     color: #ffffff;
     text-align: center;
-    font-family: 'Russo One', sans-serif;
-    
+    font-family: 'Russo One', sans-serif; 
+    position: relative;    
 }
 .template__texto__menor {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
-.template__texto__p {
-    
+.template__texto__p {    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 35;
-    
+    position: relative;     
 }
-
 .template__botao {
-    margin-top: 70px;
+    margin-top: 90px;
     text-align: center;
 }
-
 .template__botao__sobre {
     background-color: #ca970a;
     width: 280px;
@@ -133,13 +99,12 @@ h2 {
     text-decoration: none;
     font-weight: 600;
     margin-left: 50px;
-   
+    position: relative;    
 }
 .template__botao__sobre:hover {
     background-color: #e48810;
     color: #e7e3e3;
 }
-
 .template__botao__contato {
     background-color: #ffffff;
     text-align: center;
@@ -150,58 +115,58 @@ h2 {
     text-decoration: none;
     font-weight: 600;
     margin-left: 50px;
+    position: relative; 
 }
 .template__botao__contato:hover {
     background-color: #f7f2f2;
     color: #ca970a;
 }
-
-.principal {
-    background-color: #ffffff;
-    position: absolute;
-    top: 700px;
-    margin-top: 30px;
-    
-    
+.conteudoPrincipal {
+    background-color: #ffffff; 
+    top: 20%;
+    position: relative;
+    margin-bottom: 15%;
+     
 }
-
-.produtos {
-    text-align: center;
+.produtos {       
     font-size: 25px;
     font-weight: 600;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: center;  
 }
+
 .linha {
-    margin-bottom: 30px;
+    text-align: center;    
     color: #ca970a;
     font-weight: 600;
+    margin-top: 25px;    
 }
-
-.produtos__botao {
-    width: 80%;
-    display: flex;
-    margin-left: 8%;    
-}
-
-.produtos__botao__item {
+h4 {
     text-align: center;
-    margin-left: 30px;    
+    margin-top: 25px;
 }
-.rodape {
-    position:absolute;
+.card {
+    margin-top: 4%;
+ margin-left: 20px;
+}
+
+.rodape {      
     background-color: #000000;
     width: 100%;
-    top: 1800px;
+    padding: 1%;
     text-align: center;
-    
+       
 }
-
 .rodape__imagem {
-    margin-top: 30px;
+   width: 13%;
+   margin-bottom: 15px;
+   
+   
+   
 }
 .rodape__texto {
     color: #ffffff;
-    font-size: 18px;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 5px;
+    
+    
 }
