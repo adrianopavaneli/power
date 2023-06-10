@@ -1,47 +1,62 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .template {
     background: url(../img/banner.jpg) no-repeat center center ;
     width: 100%;
-    height: 700px;
-    position:absolute;   
+    height: 800px;
+    position:absolute;     
 }
 .template__topo {
-    height: 20px;
+    height: 5%px;
     width: 100%;    
     font-weight: 400;    
 }
 .template__topo .container {
+    max-width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;     
 }
 .template__topo__item {
     color: #ffffff;
-    margin-top: 5px;
+    margin-top: 1%;
 }
 .template__topo__item__email {
     color: #ffffff;
+    margin-top: 1%;
+}
+.template__topo__item__quero {
+    color: #ffffff;
+    margin-top: 1%;
 }
 .container-fluid {    
     background: #ffffff;
     width: 85%;
-    margin-top: 2%;        
+    margin-top: 3%;   
+    vertical-align: middle;     
 }
 .menu {
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 1;   
 }
 .navbar-toggler {    
     background-image: url(../img/hamburguer.png);
     width: 50px;
     height: 50px;
+
 }
+.nav-item {
+   
+}
+
 .nav-link {    
     color: #ca970a;
-    font-size: 24;    
+    font-size: 24; 
+           
 }
+
 .nav-link:hover {
     color: #000000;
 }
@@ -73,16 +88,15 @@ h2 {
     font-family: 'Russo One', sans-serif; 
     position: relative;    
 }
-.template__texto__menor {
-    margin-top: 30px;
-}
 
 .template__texto__p {    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 35;
-    position: relative;     
+    font-size: 40px;
+    position: relative;
+    margin-top: 2%;    
+    font-weight: 600; 
 }
 .template__botao {
     margin-top: 90px;
@@ -122,10 +136,9 @@ h2 {
     color: #ca970a;
 }
 .conteudoPrincipal {
-    background-color: #ffffff; 
-    top: 20%;
+    background-color: #ffffff;     
     position: relative;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
      
 }
 .produtos {       
@@ -134,11 +147,18 @@ h2 {
     align-items: center;  
 }
 
-.linha {
+.linhaGrande {
     text-align: center;    
     color: #ca970a;
     font-weight: 600;
     margin-top: 25px;    
+}
+.linhaPequena {
+    text-align: center;    
+    color: #ca970a;
+    font-weight: 600;
+    margin-top: 25px;
+    display: none;    
 }
 h4 {
     text-align: center;
@@ -158,7 +178,7 @@ h4 {
 }
 .rodape__imagem {
    width: 13%;
-   margin-bottom: 15px;
+   margin-bottom: 1%;
    
    
    
@@ -169,4 +189,80 @@ h4 {
     margin-top: 5px;
     
     
+}
+/*Tablet*/
+@media (max-width:768px) {
+    .template__topo__item__quero {
+        display: none;
+    }
+  .nav-whatsapp {
+    display: none;
+  }
+}
+/*Mobile*/
+@media(max-width:480px){
+    .template__topo__item__email {
+    display: none;
+        
+    }
+    .container-fluid {
+        margin-top: 5%;        
+    }
+    .template {
+        height: 100%;
+        padding-bottom: 20%;
+       }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .template__texto__p {
+        margin-bottom: 5%;
+        font-size: 20px;
+                
+    }
+
+  
+   .template__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .template__botao__sobre {    
+    width: 180px;
+    height: 50px;    
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 15px 30px;
+    font-weight: 600;    
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.template__botao__contato {     
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 15px 30px;    
+    font-weight: 600;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+.linhaGrande {
+    display: none;   
+}
+.linhaPequena {
+    text-align: center;    
+    color: #ca970a;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;    
+}
+h4 {
+    font-size: 20px;
+}
+.rodape__imagem {
+    width: 100px;
+}
+ 
 }
