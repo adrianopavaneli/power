@@ -141,13 +141,19 @@ h2 {
     margin-bottom: 5%;
      
 }
-.produtos {       
-    font-size: 25px;
-    font-weight: 600;
-    align-items: center;  
+.sobrenos {      
+    align-items: center; 
+    display: flex; 
+}
+.sobrenos .container {
+    display: flex;
+    flex-direction: column;
 }
 
+
 .linhaGrande {
+    font-size: 25px;
+    font-weight: 600;
     text-align: center;    
     color: #ca970a;
     font-weight: 600;
@@ -156,6 +162,8 @@ h2 {
     padding-top: 2%;
 }
 .linhaPequena {
+    font-size: 25px;
+    font-weight: 600;
     text-align: center;    
     color: #ca970a;
     font-weight: 600;
@@ -165,12 +173,34 @@ h2 {
     padding-top: 2%;   
 }
 h4 {
-    text-align: center;
-    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 3%;
 }
-.card {
-    margin-top: 4%;
- margin-left: 20px;
+.sobrenos__texto {
+    text-align: left;
+    line-height: 180%;
+}
+.valores {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2%;
+    
+}
+.valores .card {
+    
+    margin: 0% 1%;
+}
+
+
+.card-title {
+    font-size: 22;
+    font-weight: 600;
+}
+.card-text {
+    width: 100%;
+    line-height: 150%;
 }
 
 .rodape {      
